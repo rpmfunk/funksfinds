@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funksfinds - Your Trusted Tech Reviews & Guides</title>
+    <meta name="description" content="Discover the best technology products with honest reviews, expert guides, and top recommendations. Your trusted source for technology reviews in 2026.">
+    <link rel="canonical" href="https://funksfinds.pages.dev/">
+    <meta name="keywords" content="technology reviews, best technology products, technology buying guide, technology recommendations">
+    <meta property="og:title" content="funksfinds - Your Trusted Tech Reviews & Guides">
+    <meta property="og:description" content="Discover the best technology products with honest reviews and expert recommendations.">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Digital Marketing Mastery","description":"Learn the exact strategies top marketers use to generate 6-figure incomes online. Complete video course with templates and tools.","offers":{"@type":"Offer","price":"67","priceCurrency":"USD","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"2400"}}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"AI Automation Blueprint","description":"Discover how to leverage AI tools to automate your business and save 20+ hours per week. Includes prompt libraries and workflows.","offers":{"@type":"Offer","price":"97","priceCurrency":"USD","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"1800"}}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"E-Commerce Empire Builder","description":"Build a profitable online store from scratch. Complete A-Z guide covering product selection, marketing, and scaling.","offers":{"@type":"Offer","price":"47","priceCurrency":"USD","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"3200"}}}]}</script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 0; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+        .logo { font-size: 1.8rem; font-weight: bold; letter-spacing: -0.5px; }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: white; text-decoration: none; font-weight: 500; transition: opacity 0.3s; }
+        nav a:hover { opacity: 0.8; }
+        
+        /* Hero */
+        .hero { text-align: center; padding: 4rem 0 3rem; }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; font-weight: 700; }
+        .hero p { font-size: 1.3rem; opacity: 0.95; max-width: 600px; margin: 0 auto; }
+        
+        /* Sections */
+        .section { padding: 4rem 0; }
+        .section-title { text-align: center; margin-bottom: 3rem; font-size: 2.2rem; color: #2d3748; }
+        
+        /* Product Grid */
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .product-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.07); transition: transform 0.3s, box-shadow 0.3s; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.15); }
+        .product-card img { width: 100%; height: 220px; object-fit: cover; }
+        .product-info { padding: 1.5rem; }
+        .product-card h3 { margin-bottom: 0.5rem; font-size: 1.2rem; color: #2d3748; }
+        .price { color: #e53e3e; font-size: 1.4rem; font-weight: bold; margin-bottom: 0.5rem; }
+        .rating { margin: 0.5rem 0; }
+        .stars { color: #f6ad55; font-size: 1.1rem; }
+        .rating-text { color: #718096; font-size: 0.9rem; margin-left: 0.5rem; }
+        .description { color: #4a5568; font-size: 0.95rem; margin: 0.75rem 0; line-height: 1.5; }
+        .btn { display: inline-block; background: #48bb78; color: white; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 6px; font-weight: 600; margin-top: 0.5rem; transition: background 0.3s; }
+        .btn:hover { background: #38a169; }
+        .btn-secondary { background: #667eea; }
+        .btn-secondary:hover { background: #5a67d8; }
+        
+        /* Trust Section */
+        .trust-section { background: white; padding: 4rem 0; }
+        .trust-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: center; }
+        .trust-item { padding: 2rem; }
+        .trust-item h3 { font-size: 1.5rem; margin-bottom: 0.75rem; color: #2d3748; }
+        .trust-item p { color: #718096; }
+        
+        /* Newsletter */
+        .newsletter { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 4rem 0; text-align: center; }
+        .newsletter h3 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+        .newsletter p { margin-bottom: 1.5rem; opacity: 0.9; }
+        .newsletter-form { display: flex; gap: 1rem; justify-content: center; max-width: 500px; margin: 0 auto; }
+        .newsletter-form input { flex: 1; padding: 0.75rem 1rem; border: none; border-radius: 6px; font-size: 1rem; }
+        .newsletter-form button { background: #48bb78; color: white; padding: 0.75rem 2rem; border: none; border-radius: 6px; font-weight: 600; cursor: pointer; transition: background 0.3s; }
+        .newsletter-form button:hover { background: #38a169; }
+        
+        /* Footer */
+        footer { background: #2d3748; color: white; text-align: center; padding: 2.5rem 0; margin-top: 0; }
+        .disclaimer { font-size: 0.85rem; opacity: 0.8; margin-top: 1rem; max-width: 800px; margin-left: auto; margin-right: auto; }
+        .social-links { margin-top: 1rem; }
+        .social-links a { color: white; margin: 0 1rem; text-decoration: none; font-size: 1.2rem; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            nav ul { gap: 1rem; }
+            .products-grid { grid-template-columns: 1fr; }
+            .newsletter-form { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">funksfinds</div>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/reviews.html">Reviews</a></li>
+                    <li><a href="/guides.html">Guides</a></li>
+                    <li><a href="/about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="hero">
+                <h1>Your Trusted Tech Reviews & Guides</h1>
+                <p>Expert reviews and honest recommendations for the best technology products</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Top Rated Technology Products</h2>
+                <div class="products-grid">
+                    
+      <div class="product-card" itemscope itemtype="https://schema.org/Product">
+        <meta itemprop="image" content="undefined">
+        <img src="undefined" alt="Digital Marketing Mastery" loading="lazy">
+        <div class="product-info">
+          <h3 itemprop="name">Digital Marketing Mastery</h3>
+          <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <span itemprop="price">$67</span>
+            <meta itemprop="priceCurrency" content="USD">
+          </p>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="rating-text" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <span itemprop="ratingValue">4.8</span>/5 
+              (<span itemprop="reviewCount">2400</span> reviews)
+            </span>
+          </div>
+          <p class="description" itemprop="description">Learn the exact strategies top marketers use to generate 6-figure incomes online. Complete video course with templates and tools.</p>
+          <a href="https://hop.clickbank.net/?vendor=digmark01&affiliate=funksfinds" class="btn" rel="nofollow sponsored" itemprop="url">Learn More</a>
+        </div>
+      </div>
+    
+      <div class="product-card" itemscope itemtype="https://schema.org/Product">
+        <meta itemprop="image" content="undefined">
+        <img src="undefined" alt="AI Automation Blueprint" loading="lazy">
+        <div class="product-info">
+          <h3 itemprop="name">AI Automation Blueprint</h3>
+          <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <span itemprop="price">$97</span>
+            <meta itemprop="priceCurrency" content="USD">
+          </p>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="rating-text" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <span itemprop="ratingValue">4.7</span>/5 
+              (<span itemprop="reviewCount">1800</span> reviews)
+            </span>
+          </div>
+          <p class="description" itemprop="description">Discover how to leverage AI tools to automate your business and save 20+ hours per week. Includes prompt libraries and workflows.</p>
+          <a href="https://hop.clickbank.net/?vendor=aiblueprint&affiliate=funksfinds" class="btn" rel="nofollow sponsored" itemprop="url">Learn More</a>
+        </div>
+      </div>
+    
+      <div class="product-card" itemscope itemtype="https://schema.org/Product">
+        <meta itemprop="image" content="undefined">
+        <img src="undefined" alt="E-Commerce Empire Builder" loading="lazy">
+        <div class="product-info">
+          <h3 itemprop="name">E-Commerce Empire Builder</h3>
+          <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <span itemprop="price">$47</span>
+            <meta itemprop="priceCurrency" content="USD">
+          </p>
+          <div class="rating">
+            <span class="stars">★★★★☆</span>
+            <span class="rating-text" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+              <span itemprop="ratingValue">4.6</span>/5 
+              (<span itemprop="reviewCount">3200</span> reviews)
+            </span>
+          </div>
+          <p class="description" itemprop="description">Build a profitable online store from scratch. Complete A-Z guide covering product selection, marketing, and scaling.</p>
+          <a href="https://hop.clickbank.net/?vendor=ecempire&affiliate=funksfinds" class="btn" rel="nofollow sponsored" itemprop="url">Learn More</a>
+        </div>
+      </div>
+    
+                </div>
+                <div style="text-align: center; margin-top: 3rem;">
+                    <a href="/reviews.html" class="btn btn-secondary">View All Reviews</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="trust-section">
+            <div class="container">
+                <h2 class="section-title">Why Trust Our Reviews?</h2>
+                <div class="trust-grid">
+                    <div class="trust-item">
+                        <h3>🏆 Expert Testing</h3>
+                        <p>We thoroughly test every product hands-on to give you accurate, unbiased reviews you can trust.</p>
+                    </div>
+                    <div class="trust-item">
+                        <h3>💰 Best Prices</h3>
+                        <p>We constantly monitor prices across retailers to ensure you get the best deals on top-rated products.</p>
+                    </div>
+                    <div class="trust-item">
+                        <h3>✅ Honest Opinions</h3>
+                        <p>Our reviews highlight both pros and cons. We only recommend products we'd use ourselves.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="newsletter">
+            <div class="container">
+                <h3>Get the Best Deals First</h3>
+                <p>Subscribe to receive exclusive offers and new product alerts</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 funksfinds. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook">📘</a>
+                <a href="#" title="Twitter">🐦</a>
+                <a href="#" title="Instagram">📷</a>
+            </div>
+            <p class="disclaimer">This site contains affiliate links. We may earn a commission if you purchase through our links at no extra cost to you. This helps support our independent research and reviews.</p>
+        </div>
+    </footer>
+</body>
+</html>

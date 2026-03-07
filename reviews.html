@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Reviews - funksfinds</title>
+    <meta name="description" content="Browse all our technology product reviews. Expert-tested and rated by real customers.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; color: #333; background: #f8f9fa; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1rem 0; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        nav a { color: white; text-decoration: none; }
+        .page-header { background: white; padding: 3rem 0; text-align: center; border-bottom: 1px solid #e2e8f0; }
+        .page-header h1 { color: #2d3748; margin-bottom: 0.5rem; }
+        .page-header p { color: #718096; }
+        .reviews-grid { display: grid; gap: 2rem; padding: 3rem 0; }
+        .review-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: grid; grid-template-columns: 200px 1fr; gap: 1.5rem; }
+        .review-card img { width: 100%; height: 100%; object-fit: cover; }
+        .review-content { padding: 1.5rem; }
+        .review-content h3 { color: #2d3748; margin-bottom: 0.5rem; }
+        .rating { color: #f6ad55; font-size: 1.1rem; margin: 0.5rem 0; }
+        .review-content p { color: #4a5568; margin-bottom: 1rem; }
+        .review-content a { color: #667eea; text-decoration: none; font-weight: 600; }
+        .review-content a:hover { text-decoration: underline; }
+        footer { background: #2d3748; color: white; text-align: center; padding: 2rem 0; }
+        @media (max-width: 600px) { 
+            .review-card { grid-template-columns: 1fr; }
+            .review-card img { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">funksfinds</div>
+                <a href="/">← Back to Home</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="page-header">
+        <div class="container">
+            <h1>All Technology Reviews</h1>
+            <p>Expert-tested products rated by thousands of customers</p>
+        </div>
+    </div>
+    
+    <main class="container">
+        <div class="reviews-grid">
+            
+      <div class="review-card">
+        <img src="undefined" alt="Digital Marketing Mastery">
+        <div class="review-content">
+          <h3>Digital Marketing Mastery</h3>
+          <div class="rating">★★★★ 4.8/5</div>
+          <p>Learn the exact strategies top marketers use to generate 6-figure incomes online. Complete video course with templates a...</p>
+          <a href="reviews/product-1.html">Read Full Review →</a>
+        </div>
+      </div>
+    
+      <div class="review-card">
+        <img src="undefined" alt="AI Automation Blueprint">
+        <div class="review-content">
+          <h3>AI Automation Blueprint</h3>
+          <div class="rating">★★★★ 4.7/5</div>
+          <p>Discover how to leverage AI tools to automate your business and save 20+ hours per week. Includes prompt libraries and w...</p>
+          <a href="reviews/product-2.html">Read Full Review →</a>
+        </div>
+      </div>
+    
+      <div class="review-card">
+        <img src="undefined" alt="E-Commerce Empire Builder">
+        <div class="review-content">
+          <h3>E-Commerce Empire Builder</h3>
+          <div class="rating">★★★★ 4.6/5</div>
+          <p>Build a profitable online store from scratch. Complete A-Z guide covering product selection, marketing, and scaling....</p>
+          <a href="reviews/product-3.html">Read Full Review →</a>
+        </div>
+      </div>
+    
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 funksfinds. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
